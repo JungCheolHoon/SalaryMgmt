@@ -2,16 +2,18 @@ package com.example.libs;
 
 public class Employee {
 	private String empno;
-	private int base, night, famlily;
-	private String name, dname, hopay, fampay, nightpay, total, salary;
+	private int base, night, family;
+	private String name, dname;
+	private int bapay, hopay, fampay, nightpay, total, salary;
 	public Employee() {}
-	public Employee(String empno, String name , int base, int night, int famlily) {
+	public Employee(String empno, String name , int base, int night, int family) {
 		this.empno = empno;	
 		this.name = name;		
 		this.base = base;
 		this.night = night;
-		this.famlily = famlily;
+		this.family = family;
 	}
+	
 	public String getEmpno() {
 		return empno;
 	}
@@ -30,11 +32,11 @@ public class Employee {
 	public void setNight(int night) {
 		this.night = night;
 	}
-	public int getFamlily() {
-		return famlily;
+	public int getFamily() {
+		return family;
 	}
-	public void setFamlily(int famlily) {
-		this.famlily = famlily;
+	public void setFamily(int family) {
+		this.family = family;
 	}
 	public String getName() {
 		return name;
@@ -48,34 +50,40 @@ public class Employee {
 	public void setDname(String dname) {
 		this.dname = dname;
 	}
-	public String getHopay() {
+	public int getBapay() {
+		return bapay;
+	}
+	public void setBapay(int bapay) {
+		this.bapay = bapay;
+	}
+	public int getHopay() {
 		return hopay;
 	}
-	public void setHopay(String hopay) {
+	public void setHopay(int hopay) {
 		this.hopay = hopay;
 	}
-	public String getFampay() {
+	public int getFampay() {
 		return fampay;
 	}
-	public void setFampay(String fampay) {
+	public void setFampay(int fampay) {
 		this.fampay = fampay;
 	}
-	public String getNightpay() {
+	public int getNightpay() {
 		return nightpay;
 	}
-	public void setNightpay(String nightpay) {
+	public void setNightpay(int nightpay) {
 		this.nightpay = nightpay;
 	}
-	public String getTotal() {
+	public int getTotal() {
 		return total;
 	}
-	public void setTotal(String total) {
+	public void setTotal(int total) {
 		this.total = total;
 	}
-	public String getSalary() {
+	public int getSalary() {
 		return salary;
 	}
-	public void setSalary(String salary) {
+	public void setSalary(int salary) {
 		this.salary = salary;
 	}
 	@Override
